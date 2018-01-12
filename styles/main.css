@@ -5,7 +5,7 @@ body{
  width: 100%;
 }
 
-@media screen (min-width: 500px) {
+@media (min-width: 800px) {
   .logo {
     visibility: visible;
   }
@@ -23,6 +23,8 @@ body{
 .banner img {
  max-width: 80%;
 }
+
+
 
 /*-----------------------------------------------*/
 a {

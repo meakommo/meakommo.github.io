@@ -4,47 +4,58 @@
 		<title>The center of it all</title>
 		<meta charset="UTF-8">
 		<link href="../styles/main.css" rel="stylesheet" type="text/css">
+		<link href="../styles/skeleton.css" rel="stylesheet" type="text/css">
 	</head>
-	
 	<body>
-		<section id="header">
-			<div class="inner">
-				<a href="../index.html" class="logo">The Center of it all</a>
-				<nav id="nav">
-					<a href="../index.html">Home</a>
-				</nav>
-			</div>
-		</section>
-		<section id="one">
-			<div class="inner">
-				<header>
-					<h2>Technical Blog Part 2 </h2>
-				</header>
-				<ul>
-					<p>
-						<ul>
-							<li><strong>What is grid based design?</strong></li>
-							<p>Grid based design is the concept that a design can be made up of a grid system. grid is not just about squares but about proportions.</p>
-							<li><strong>Whats all the hype about responsive webpages?</strong></li>
-							<p>With the growth of the internet and the rise of smart devices there is a need for websites to be able to be viewed on a host of different devices with varying screen sizes. in order to meet this demand websites need to be able to respond to different screen sizes and display a website that best meets the devices screen.</p>
-							<li><strong>What is semantic structure?</strong></li>
-							<p>Semantic HTML structure is the idea that HTML should convey the underlying meaning of the conent and not it's appearance.</p>
-							<li><strong>Any other points you found interesting and want to reflect on.</strong></li>
-							<p>In the past when creating CSS I have used a very free hand approach, however the grid system helps to standadize the layout of a website and improve overall website coherance.</p>
+		<div class="container">
+			<div class="container">
+				<div class="topbar row">
+					<div class="logo">
+						<div class="offset-by-two three columns">
+							<p>The Center of it All</p>
+						</div>
+					</div>
+					<div class="offset-by-three four columns">
+						<nav class="navside">
+							<ul>
+								<li><a href="#">Menu</a>
+								<ul>
+									<li><a href="#">Placeholder</a></li>
+									<li><a href="#">Placeholder</a></li>
+									<li><a href="#">Placeholder</a></li>
+									<li><a href="#">Placeholder</a></li>
+									<li><a href="#">Placeholder</a></li>
+								</ul>
+							</li>
 						</ul>
-					</p>
-				</ul>
-				<ul>
-					<li><a href="../index.html">Back</a></li>
-				</ul>
-			</div>
-		</section>
-		<footer>
-			<section id="footer">
-				<div class="inner">
-					
+					</nav>
 				</div>
-			</section>
-		</footer>
-	</body>
-</html>
+			</div>
+			<div class="row">
+				<div class="main-section blog offset-by-two ten columns">
+					
+					<header>
+						<h2>Technical Blog Part 2 </h2>
+					</header>
+					<ul>
+						<p>
+							<ul>
+								<li><strong>What is grid based design?</strong></li>
+								<p>Grid based design is the concept that a design can be made up of a grid system. grid is not just about squares but about proportions.</p>
+								<li><strong>Whats all the hype about responsive webpages?</strong></li>
+								<p>With the growth of the internet and the rise of smart devices there is a need for websites to be able to be viewed on a host of different devices with varying screen sizes. in order to meet this demand websites need to be able to respond to different screen sizes and display a website that best meets the devices screen.</p>
+								<li><strong>What is semantic structure?</strong></li>
+								<p>Semantic HTML structure is the idea that HTML should convey the underlying meaning of the conent and not it's appearance.</p>
+								<li><strong>Any other points you found interesting and want to reflect on.</strong></li>
+								<p>In the past when creating CSS I have used a very free hand approach, however the grid system helps to standadize the layout of a website and improve overall website coherance.</p>
+							</ul>
+						</p>
+					</ul>
+					
+					<ul>
+						<li><a class="button" href="../index.html">Back</a></li>
+					</ul>
+				</div>
+			</div>
+		</body>
+	</html>

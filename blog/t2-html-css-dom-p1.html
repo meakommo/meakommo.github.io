@@ -4,77 +4,89 @@
 		<title>The center of it all</title>
 		<meta charset="UTF-8">
 		<link href="../styles/main.css" rel="stylesheet" type="text/css">
+		<link href="../styles/skeleton.css" rel="stylesheet" type="text/css">
 	</head>
-	
 	<body>
-		<section id="header">
-			<div class="inner">
-				<a href="../index.html" class="logo">The Center of it all</a>
-				<nav id="nav">
-					<a href="../index.html">Home</a>
-				</nav>
-			</div>
-		</section>
-		<section id="one">
-			<div class="inner">
-				<header>
-					<h2>Technical Blog Part 1 </h2>
-				</header>
-				<ul>
-					<li><strong>Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</strong></li>
-					<p><ul>
-						<li>
-							<strong>HTML</strong>
-						</li>
-						HTML is what the materials that make up a house are to a website. Everything that is required to build a house is there but without a plan and someone to put them together it is just a pile of materials.
-						
-						<li>
-							<strong>CSS</strong>
-						</li>
-						CSS is the plan for the house it determines where something should go and what color the walls should be.
-						<li>
-							<strong>DOM</strong>
-						</li>
-						DOM is the building manager it organises the workers to put the materials where they need to be and states when something doesn't meet requirments.
-					</ul>
-				</p>
-			</ul>
-			<ul>
-				<li><strong>What is meant by boxifying design?</strong></li>
-				<p>Everything on a webpage is inside of a box the nav bar the title the banner image the body and the footer are all inside of one over all box. each section is then made up of its own box which maybe even contain smaller boxes again. even if something doesn't look like a box if you inspect the element you will find that it is indeed a box.</p>
-			</ul>
-			<ul>
-				<li><strong>What is the box model?</strong></li>
-				<p>The CSS box model refers to the box that wraps around all HTML elements. it is made up of...
-					<ul>
-						<li><strong>Content</strong> - The content of the box, where text and images appear</li>
-						<li><strong>Padding</strong> - Clears an area around the content. The padding is transparent</li>
-						<li><strong>Border</strong> - A border that goes around the padding and content</li>
-						<li><strong>Margin</strong> - Clears an area outside the border. The margin is transparent/li>
+		<div class="container">
+			<div class="container">
+				<div class="topbar row">
+					<div class="logo">
+						<div class="offset-by-two three columns">
+							<p>The Center of it All</p>
+						</div>
+					</div>
+					<div class="offset-by-three four columns">
+						<nav class="navside">
+							<ul>
+								<li><a href="#">Menu</a>
+								<ul>
+									<li><a href="#">Placeholder</a></li>
+									<li><a href="#">Placeholder</a></li>
+									<li><a href="#">Placeholder</a></li>
+									<li><a href="#">Placeholder</a></li>
+									<li><a href="#">Placeholder</a></li>
+								</ul>
+							</li>
 						</ul>
-						</br>
-						The box model allows us to do many things such as add borders around elements and define space between elements.
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="main-section blog offset-by-two ten columns">
+					
+					<header>
+						<h2>Technical Blog Part 1 </h2>
+					</header>
+					<ul>
+						<li><strong>Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</strong></li>
+						<p><ul>
+							<li>
+								<strong>HTML</strong>
+							</li>
+							HTML is what the materials that make up a house are to a website. Everything that is required to build a house is there but without a plan and someone to put them together it is just a pile of materials.
+							
+							<li>
+								<strong>CSS</strong>
+							</li>
+							CSS is the plan for the house it determines where something should go and what color the walls should be.
+							<li>
+								<strong>DOM</strong>
+							</li>
+							DOM is the building manager it organises the workers to put the materials where they need to be and states when something doesn't meet requirments.
+						</ul>
 					</p>
 				</ul>
 				<ul>
-					<li><strong>Design wishlist</strong></li>
-					<p>1. Banner image</p>
-					<p>2. Blog post commenting</p>
-					<p>3. external sites open to new tab/window</p>
-					<p>4. Social media intergration (Share follow etc.)</p>
-					<p>5. Mobile friendly/responsive</p>
+					<li><strong>What is meant by boxifying design?</strong></li>
+					<p>Everything on a webpage is inside of a box the nav bar the title the banner image the body and the footer are all inside of one over all box. each section is then made up of its own box which maybe even contain smaller boxes again. even if something doesn't look like a box if you inspect the element you will find that it is indeed a box.</p>
 				</ul>
 				<ul>
-					<li><a href="../index.html">Back</a></li>
-				</ul>
-			</div>
-		</section>
-		<footer>
-			<section id="footer">
-				<div class="inner">
+					<li><strong>What is the box model?</strong></li>
+					<p>The CSS box model refers to the box that wraps around all HTML elements. it is made up of...
+						<ul>
+							<li><strong>Content</strong> - The content of the box, where text and images appear</li>
+							<li><strong>Padding</strong> - Clears an area around the content. The padding is transparent</li>
+							<li><strong>Border</strong> - A border that goes around the padding and content</li>
+							<li><strong>Margin</strong> - Clears an area outside the border. The margin is transparent/li>
+							</ul>
+							</br>
+							The box model allows us to do many things such as add borders around elements and define space between elements.
+						</p>
+					</ul>
+					<ul>
+						<li><strong>Design wishlist</strong></li>
+						<p>1. Banner image</p>
+						<p>2. Blog post commenting</p>
+						<p>3. external sites open to new tab/window</p>
+						<p>4. Social media intergration (Share follow etc.)</p>
+						<p>5. Mobile friendly/responsive</p>
+					</ul>
 					
+					
+					<ul>
+						<li><a class="button" href="../index.html">Back</a></li>
+					</ul>
 				</div>
-			</section>
-		</footer>
-	</body>
-</html>
+			</div>
+		</body>
+	</html>
