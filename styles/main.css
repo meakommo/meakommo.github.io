@@ -34,14 +34,81 @@ a {
     text-transform: uppercase;
     white-space: nowrap;
 }
-.navbar a{
-    background-color: #fff;
-    color: black;
-    cursor: pointer;
-        list-style-type: none;
-    margin: 0;
-    padding: 0;
+ul li {
+  list-style-type: none;
+  padding: 10px 25px 10px 25px;
+  margin: 5px;
+  border: 1px solid #707070;
+  background-color: #ffffff;
 }
+
+li:hover {
+  background: #FFCC00; 
+} 
+
+.active {
+  color: #ffffff;
+  background: #FFCC00; 
+} 
+
+/* nav links */
+.navside a:link,a:visited {
+  color: #707070;
+  padding: 10px 25px 10px 25px;
+  text-decoration: none;
+ }  
+
+.navside a:hover,a:active {
+  color: #ffffff;
+  background: #FFCC00;
+}  
+
+
+
+
+
+/* copied and modified for my use from http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu */
+nav ul ul {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+
+nav ul li a {
+  display: block;
+}
+
+nav ul li {
+  float: none; 
+  position: relative;
+}
+
+nav ul ul {
+  position: absolute; left: 100%; top:0;/* position changed from top100 to left as it is a side menu */
+}
+
+nav ul ul li {
+  float: none; 
+  position: relative;
+  z-index: 1;
+}
+
+nav ul ul ul {
+  position: absolute; left: 100%; top:0;
+}
+
+
+
+
+
 .topbar {
   background-color: black;
   max-height: 5em;
