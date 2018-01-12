@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+
+body{
+ margin: 0;
+ width: 100%;
+}
+
+@media screen (min-width: 500px) {
+  .logo {
+    visibility: visible;
+  }
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  color: #e5474b;
+  font-size: 1.75em;
+  padding-top: 0.5em;
+  visibility: none;
+  
+}
+a {
+  border-radius: 0;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: .8em;
+    font-weight: 700;
+    height: 3.5em;
+    line-height: 3.65em;
+    padding: 0 2.25em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.navbar a{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+        list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.topbar {
+  background-color: black;
+  max-height: 5em;
+}
+
+.banner {
+  align-content: center;
+
+  padding-bottom: 1em;
+}
+.banner img{
+    max-width: 100%;
+  max-height: 10.33333375%
+}
+.main-section {
+  padding-left: 1em;
+}
+.main-section ul {
+  list-style-type: none;
+}
+.blog {
+  padding-top: 5em;
+  padding-right: 18%;
+}
+
+
+
+
+
+
+
+
+
