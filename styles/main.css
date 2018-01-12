@@ -27,7 +27,7 @@ body{
 
 
 /*-----------------------------------------------*/
-a {
+.navside a {
   border-radius: 0;
     border: 0;
     cursor: pointer;
