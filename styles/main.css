@@ -5,18 +5,13 @@ body{
  width: 100%;
 }
 
-@media (min-width: 800px) {
-  .logo {
-    visibility: visible;
-  }
-}
+
 
 .logo {
   font-family: 'Pacifico', cursive;
   color: #e5474b;
   font-size: 1.75em;
   padding-top: 0.5em;
-  visibility: none;
   
 }
 
