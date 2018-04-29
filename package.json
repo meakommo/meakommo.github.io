@@ -29,6 +29,9 @@
     "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "knex": "^0.14.6",
+    "react-router-dom": "^4.2.2",
+    "sqlite3": "^4.0.0"
   }
 }

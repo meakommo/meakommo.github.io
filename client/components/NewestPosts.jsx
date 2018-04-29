@@ -5,6 +5,7 @@ class NewestPosts extends React.Component {
     super(props)
     this.state = {
       title: '',
+      subTitle: '',
       blogSample: '',
       url: ''
     }
@@ -14,18 +15,15 @@ class NewestPosts extends React.Component {
     return (
       <div className="main-section offset-by-two five columns">
         <div>
-          <h2>Leadership</h2>
+          <h2>{this.state.title}</h2>
         </div>
         <ul>
-          <li><strong>What is your experience of compassionate (or not) leadership?</strong></li>
-          <p>Compassion is an often forgotten part of social interactions, this is particularly true when it comes to leadership.
-					as a leader if you are able to sympathise with those working for you then you can better understand what motivates them
-           and in turn motivate them better.
-          </p>
+          <li><strong>{this.state.subTitle}</strong></li>
+          <p>{this.state.blogSample}</p>
         </ul>
         <ul>
           <li>
-            <a className="button" href="blog/c9-leadership.html">Read More</a>
+            <Link to={this.state.url}>Read More</Link>
           </li>
         </ul>
       </div>
