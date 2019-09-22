@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="gt-ie8" lang="en">
+<!--<![endif]-->
+<!--[if lt IE 10]><meta http-equiv="X-UA-Compatible"content="IE=edge"><![endif]-->
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="./js/c_voda_main.css">
+    <link rel="stylesheet" type="text/css" media="all" href="./js/arctransform.css">
+    <!--[if lte IE 9]>
+<link rel="stylesheet"type="text/css"media="all"href="css/styleguide_common-blessed.css?ver=1564370054">
+<![endif]-->
+
+
+
+
+
+</head>
+
+<body onload="pre_init()">
+    <table margin="0" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+            <tr>
+                <td class="head_bold" width="100%" valign="top" height="100%">
+                    <div id="contentbody" style="visibility: visible;">
+                        <p id="top_left_menu" style="visibility: visible;"></p>
+                        <div class="subtitle"><label id="menu_nav">Overview&nbsp;&gt;&nbsp;Connected Devices</label><label id="menu_sub"></label></div>
+                        <p></p>
+                        <form name="tF0" target="OUTfrm" class="arctransformdone" style="">
+                            <table width="100%" cellspacing="0" cellpadding="10" border="0" align="center">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:top;">
+                                            <table width="100%" cellspacing="1" cellpadding="5" border="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="vertical-align:top;">
+                                                            <table id="id_table_dhcp_client" class="vox20_table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th class="tdTitle" width="25%" nowrap="nowrap">
+                                                                            <font id="220101" lang="1">Name</font>
+                                                                        </th>
+                                                                        <th class="tdTitle" width="15%" nowrap="nowrap">
+                                                                            <font id="220102" lang="1">IP Address</font>
+                                                                        </th>
+                                                                        <th class="tdTitle" nowrap="nowrap">
+                                                                            <font id="220103" lang="1">MAC Address</font>
+                                                                        </th>
+                                                                        <th class="tdTitle" width="10%">
+                                                                            <font id="220104" lang="1">Interface</font>
+                                                                        </th>
+                                                                        <th class="tdTitle" width="25%">&nbsp;</th>
+                                                                    </tr>
+
+                                                                    <tr style="">
+                                                                        <td class="tdText"></td>
+                                                                        <td class="tdText">192.168.1.65</td>
+                                                                        <td class="tdText">3C:A0:67:AF:F4:33</td>
+                                                                        <td class="tdText">2.4G</td>
+                                                                        <td class="tdText" style="text-decoration:underline; cursor:pointer" onclick="redirect_parentalCtrl('3C:A0:67:AF:F4:33','');">Manage Internet Access</td>
+                                                                    </tr>
+                                                                    <tr style="">
+                                                                        <td class="tdText_odd">Galaxy-Note9</td>
+                                                                        <td class="tdText_odd">192.168.1.64</td>
+                                                                        <td class="tdText_odd">08:C5:E1:CA:A1:9E</td>
+                                                                        <td class="tdText_odd">2.4G</td>
+                                                                        <td class="tdText_odd" style="text-decoration:underline; cursor:pointer" onclick="redirect_parentalCtrl('08:C5:E1:CA:A1:9E','Galaxy-Note9');">Manage Internet Access</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;">
+                                            <div id="btn_refresh_log" class="arctransformdone arcTransformButton " style="min-width:60px;"><a id="refresh_log" onclick="return $(this).arcTransInputButtonClick()" func="JumpURL('clients.htm');" href="javascript:void(0)"><span class="ButtonLeft" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle" style="height:40px;width:68px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Refresh</span><span class="ButtonRight" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>&nbsp;
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="progress" class="large reveal-modal" style="display:none"><span id="MSG" style="display:none"></span><br><br><br><span><span class="progresspanel" id="progresspanel"><div class="progressbar" id="progressbar"></div></span>&nbsp;&nbsp;&nbsp;<span id="timeRemain" style="display:none"></span></span><br>
+        <form class="arctransformdone" style=""><span id="Error_btn" style="display:none"><div id="btn_err_btn" class="arctransformdone arcTransformButton button_m" style="min-width:44px;"><a id="err_btn" onclick="return $(this).arcTransInputButtonClick()" func="do_goNext()" href="javascript:void(0)"><span class="ButtonLeft green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span>
+            <span class="ButtonMiddle green button_m" style="height:32px;width:38px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Back</span>
+            <span
+                class="ButtonRight green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span>
+                </a>
+    </div>
+    </span>
+    </form>
+    </div>
+    <div id="nullprogress" class="reveal-modal" style="display:none"></div>
+    <img title="spacer" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7MTY3NzkyMjgxMA==" border="0">
+
+</body>
+
+</html>

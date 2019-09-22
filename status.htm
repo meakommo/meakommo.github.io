@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="gt-ie8" lang="en"><!--<![endif]--><!--[if lt IE 10]><meta http-equiv="X-UA-Compatible"content="IE=edge"><![endif]--><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" media="screen" href="./js/c_voda_main.css">
+<link rel="stylesheet" type="text/css" media="all" href="./js/arctransform.css">
+<!--[if lt IE 9]>
+<link rel="stylesheet"type="text/css"media="screen"href="css/ie.css?ver=1564370054">
+<![endif]-->
+
+
+
+
+
+
+
+
+</head>
+<body onload="pre_init()">
+<table margin="0" width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="head_bold" width="100%" valign="top" height="100%"><div id="contentbody" style="visibility: visible;"><p id="top_left_menu" style="visibility: visible;"></p><div class="subtitle"><label id="menu_nav">Overview&nbsp;&gt;&nbsp;Network Status</label><label id="menu_sub"></label></div><p></p>
+<form name="tF0" method="post" target="OUTfrm" class="arctransformdone" style="">
+<table width="100%" cellspacing="0" cellpadding="10" border="0" align="center">
+<tbody><tr>
+<td style="vertical-align:top;">
+<p class="normalText">
+<b><font id="220011" lang="1">Current Time</font></b>:&nbsp;&nbsp;
+<span id="st_now_time">Not Available</span>
+</p>
+<table width="98%" cellspacing="1" cellpadding="5" border="0">
+<tbody><tr id="wan_status" style="visibility: visible;">
+<td width="98%" valign="top">
+<p class="subtitle2"><font id="220023" lang="1">Connection Status</font></p>
+<table class="vox20_table" cellspacing="1" cellpadding="5" border="0">
+<tbody><tr>
+<td class="tdText" colspan="6"><div class="float_left_text">WAN Index&nbsp;&nbsp;
+</div><div class="arcTransformSelectWrapper " style="z-index: 100; width: 51px;"><div><span style="width: 16px;">1</span><a href="#" class="arcTransformSelectOpen"></a></div><ul style="width: 53px; display: none; height: 104px; visibility: visible; overflow: hidden;"><li><a href="#" index="0" class="selected">1</a></li><li><a href="#" index="1">2</a></li><li><a href="#" index="2">3</a></li><li><a href="#" index="3">4</a></li></ul><select name="wan_index" onchange="showInternetStatus(this.value)" class="arcTransformHidden">
+<option value="0" selected="selected">1</option>
+<option value="1">2</option>
+<option value="2">3</option>
+<option value="3">4</option>
+</select></div>
+<span id="active_dslmode" style="color: blue;">( Disconnected )</span>
+</td>
+</tr>
+<tr>
+<td class="tdTitle" width="15%"><font id="220015" lang="1">WAN Protocol</font></td>
+<td class="tdTitle" width="15%"><font id="220016" lang="1">WAN IP</font></td>
+<td class="tdTitle" width="15%"><font id="220017" lang="1">Gateway</font></td>
+<td class="tdTitle" width="15%"><font id="220018" lang="1">DNS</font></td>
+<td class="tdTitle" width="30%"></td>
+</tr>
+<tr>
+<td class="tdText" id="u_wan_protocol">PPPoA</td>
+<td class="tdText" id="u_wan_ip"></td>
+<td class="tdText" id="u_wan_gw"></td>
+<td class="tdText" id="u_wan_dns"></td>
+<td class="tdText">
+<div id="wan_dhcp_action" style="display: none; visibility: hidden;">
+<div id="btn_release" class="arctransformdone arcTransformButton button_m" style="min-width:60px;"><a id="release" onclick="return $(this).arcTransInputButtonClick()" func="dhcp_release()" href="javascript:void(0)"><span class="ButtonLeft red button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle red button_m" style="height:32px;width:59px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Release</span><span class="ButtonRight red button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>&nbsp;
+<div id="btn_renew" class="arctransformdone arcTransformButton button_m" style="min-width:55px;"><a id="renew" onclick="return $(this).arcTransInputButtonClick()" func="dhcp_renew()" href="javascript:void(0)"><span class="ButtonLeft green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle green button_m" style="height:32px;width:52px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Renew</span><span class="ButtonRight green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>
+</div>
+<div id="wan_ppp_action" style="display: none; visibility: hidden;">
+<span id="wan_ppp_disconn" style="display: none; visibility: hidden;">
+<div id="btn_disconnect" class="arctransformdone arcTransformButton button_m" style="min-width:82px;"><a id="disconnect" onclick="return $(this).arcTransInputButtonClick()" func="ppp_disconnect();" href="javascript:void(0)"><span class="ButtonLeft red button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle red button_m" style="height:32px;width:88px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Disconnect</span><span class="ButtonRight red button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>
+</span>
+<span id="wan_ppp_connect" style="display: none; visibility: hidden;">
+<div id="btn_connect" class="arctransformdone arcTransformButton button_m" style="min-width:67px;"><a id="connect" onclick="return $(this).arcTransInputButtonClick()" func="ppp_connect();" href="javascript:void(0)"><span class="ButtonLeft green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle green button_m" style="height:32px;width:68px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Connect</span><span class="ButtonRight green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>
+</span>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr id="wan_action" style="display: none; visibility: hidden;">
+<td>
+<p class="subtitle2"><font id="st250"></font></p><br>
+<p class="normalText"><b class="txt3"><font id="st258"></font></b></p>
+<div><div id="btn_go" class="arctransformdone arcTransformButton " style="min-width:15px;"><a id="go" onclick="return $(this).arcTransInputButtonClick()" func="goToWAN()" href="javascript:void(0)"><span class="ButtonLeft " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle " style="height:40px;width:0px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonRight " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div></div>
+</td>
+</tr>
+</tbody></table>
+<table width="100%" cellspacing="1" cellpadding="5" border="0">
+<tbody><tr id="status_wlan">
+<td style="vertical-align:top;">
+<p class="subtitle2"><font id="220040" lang="1">Wireless Status</font></p>
+<table id="tb_wlan_status" class="vox20_table">
+<tbody><tr>
+<th class="tdTitle" width="30%" nowrap="nowrap"><font id="220041" lang="1">SSID</font></th>
+<th class="tdTitle" width="10%" nowrap="nowrap"><font id="220042" lang="1">State</font></th>
+<th class="tdTitle" width="13%" nowrap="nowrap"><font id="220043" lang="1">Channel</font></th>
+<th class="tdTitle" width="17%" nowrap="nowrap"><font id="220044" lang="1">SSID Broadcast</font></th>
+<th class="tdTitle" width="25%" nowrap="nowrap"><font id="220045" lang="1">Encryption Type</font></th>
+</tr>
+<tr style=""><td class="tdText">SPARK-F6XZ2D</td><td class="tdText">Enable</td><td class="tdText">Auto</td><td class="tdText">Enable</td><td class="tdText">WPA-WPA2-Personal</td></tr><tr style=""><td class="tdText_odd">GUEST_SPARK-F6XZ2D</td><td class="tdText_odd">Disable</td><td class="tdText_odd">Auto</td><td class="tdText_odd">Enable</td><td class="tdText_odd">WPA-WPA2-Personal</td></tr><tr style=""><td class="tdText">SPARK-F6XZ2D-5G</td><td class="tdText">Enable</td><td class="tdText">Auto</td><td class="tdText">Enable</td><td class="tdText">WPA-WPA2-Personal</td></tr><tr style=""><td class="tdText_odd">GUEST_SPARK-F6XZ2D</td><td class="tdText_odd">Disable</td><td class="tdText_odd">Auto</td><td class="tdText_odd">Enable</td><td class="tdText_odd">WPA-WPA2-Personal</td></tr></tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table width="100%" cellspacing="1" cellpadding="5" border="0">
+<tbody><tr>
+<td style="vertical-align:top;">
+<p class="subtitle2"><font id="220060" lang="1">LAN Information</font></p>
+<table class="vox20_table">
+<tbody><tr>
+<th class="tdTitle"><font id="220061" lang="1">IP Address</font></th>
+<th class="tdTitle"><font id="220062" lang="1">Subnet Mask</font></th>
+<th class="tdTitle"><font id="220063" lang="1">LAN MAC</font></th>
+<th class="tdTitle"><font id="220064" lang="1">Wireless 2.4GHz MAC</font></th>
+<th class="tdTitle"><font id="220065" lang="1">Wireless 5GHz MAC</font></th>
+</tr>
+<tr>
+<td class="tdText"><span id="lan_gateway_ip">192.168.1.254</span></td>
+<td class="tdText"><span id="lan_gateway_mask">255.255.255.0</span></td>
+<td class="tdText"><span id="lan_mac_addr">F0:86:20:3B:10:72</span></td>
+<td class="tdText"><span id="wlan_mac_addr">F0:86:20:3B:10:72</span></td>
+<td class="tdText"><span id="wlan_mac_addr_5g">F0:86:20:3B:10:73</span></td>
+</tr>
+</tbody></table>
+<table id="id_table_lan_port" class="vox20_table" style="margin-top: 18px;">
+<tbody><tr>
+<td class="tdText tdLast" width="17%">
+<span id="id_lan_port0" class="cLanPortRadio" style="border:none;"></span>
+LAN&nbsp;1
+</td>
+<td class="tdText tdLast" width="17%">
+<span id="id_lan_port1" class="cLanPortRadio" style="border:none;"></span>
+LAN&nbsp;2
+</td>
+<td class="tdText tdLast" width="17%">
+<span id="id_lan_port2" class="cLanPortRadio" style="border:none;"></span>
+LAN&nbsp;3
+</td>
+<td class="tdText tdLast" style="display: none;" width="17%">
+<span id="id_lan_port3" class="cLanPortRadio" style="border:none;"></span>
+LAN&nbsp;4
+</td>
+<td class="tdText tdLast" width="16%">
+<span id="wifi_lan0" class="cLanPortRadio cLanPortRadioChecked" style="border:none;"></span>
+WLAN&nbsp;2.4G
+</td>
+<td class="tdText tdLast" width="16%">
+<span id="wifi_lan1" class="cLanPortRadio cLanPortRadioChecked" style="border:none;"></span>
+WLAN&nbsp;5G
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table id="ipv6_status" style="display:none;" width="100%" cellspacing="1" cellpadding="5" border="0">
+<tbody><tr>
+<td style="vertical-align:top;">
+<p class="subtitle2"><font id="220088" lang="1">IPv6</font></p>
+<table class="vox20_table">
+<tbody><tr id="ipv6_non-tunnel0">
+<td><font id="220015" lang="1">WAN Protocol</font>:&nbsp;</td>
+<td><font id="ipv6_wan_proto"></font></td>
+</tr>
+<tr id="ipv6_non-tunnel1">
+<td><font id="220016" lang="1">WAN IP</font>:&nbsp;</td>
+<td><font id="ipv6_wan_ip"></font></td>
+</tr>
+<tr id="ipv6_non-tunnel2">
+<td><font id="220089" lang="1">WAN Prefix</font>:&nbsp;</td>
+<td><font id="ipv6_wan_prefix"></font></td>
+</tr>
+<tr id="ipv6_non-tunnel3">
+<td><font id="220090" lang="1">Assigned Prefix</font>:&nbsp;</td>
+<td><font id="ipv6_lan_prefix"></font></td>
+</tr>
+<tr id="ipv6_non-tunnel4">
+<td><font id="220017" lang="1">Gateway</font>:&nbsp;</td>
+<td><font id="ipv6_wan_gw"></font></td>
+</tr>
+<tr id="ipv6_non-tunnel5">
+<td><font id="220026" lang="1">Primary DNS</font>:&nbsp;</td>
+<td><font id="ipv6_wan_dns1"></font></td>
+</tr>
+<tr id="ipv6_non-tunnel6">
+<td><font id="220027" lang="1">Secondary DNS</font>:&nbsp;</td>
+<td><font id="ipv6_wan_dns2"></font></td>
+</tr>
+<tr id="ipv6_tunnel">
+<td colspan="2" class="tdLast">
+<font id="220080" lang="1">Tunnel Status</font>:&nbsp;<font id="ipv6_tunnel_status"></font><br>
+<div id="ipv6_tunnel_reconnect_action">
+<div id="btn_reconnect" class="arctransformdone arcTransformButton " style="min-width:80px;"><a id="reconnect" onclick="return $(this).arcTransInputButtonClick()" func="ipv6_tunnel_reconnect()" href="javascript:void(0)"><span class="ButtonLeft " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle " style="height:40px;width:98px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Reconnect</span><span class="ButtonRight " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>
+</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table width="100%" cellspacing="1" cellpadding="5" border="0">
+<tbody><tr id="id_tr_lan_port_list" style="display:none;">
+<td style="vertical-align:top;">
+<p class="subtitle2"><font id="220066"></font></p>
+<table id="tb_lan_status" class="vox20_table">
+<tbody><tr>
+<th class="tdTitle" width="15%" nowrap="nowrap"><font id="220067"></font></th>
+<th class="tdTitle" width="15%" nowrap="nowrap"><font id="220068"></font></th>
+<th class="tdTitle" width="15%" nowrap="nowrap"><font id="220069"></font></th>
+<th class="tdTitle" width="15%" nowrap="nowrap"><font id="220070"></font></th>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td>
+<p class="subtitle2"><font id="260000" lang="1">USB</font></p>
+<table id="id_table_usb_device" class="vox20_table" style="table-layout:fixed;word-wrap:break-word;word-break;break-all;" width="80%">
+<tbody><tr>
+<th class="tdTitle" width="30%"><font id="261050" lang="1">Connected USB Device</font></th>
+<th class="tdTitle" width="70%"><font id="261051" lang="1">Name</font></th>
+</tr>
+<tr style=""><td colspan="2" class="tdText" style="text-align:center;">No valid connected USB Device</td></tr></tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style="padding-left:250px;">
+<div id="btn_refresh_log" class="arctransformdone arcTransformButton " style="min-width:60px;"><a id="refresh_log" onclick="return $(this).arcTransInputButtonClick()" func="JumpURL('status.htm');" href="javascript:void(0)"><span class="ButtonLeft " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle " style="height:40px;width:68px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Refresh</span><span class="ButtonRight " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>
+</td>
+</tr>
+</tbody></table>
+</form>
+</div></td></tr></tbody></table><div id="progress" class="large reveal-modal" style="display:none"><span id="MSG" style="display:none"></span><br><br><br><span><span class="progresspanel" id="progresspanel"><div class="progressbar" id="progressbar"></div></span>&nbsp;&nbsp;&nbsp;<span id="timeRemain" style="display:none"></span></span><br><form class="arctransformdone" style=""><span id="Error_btn" style="display:none"><div id="btn_err_btn" class="arctransformdone arcTransformButton button_m" style="min-width:44px;"><a id="err_btn" onclick="return $(this).arcTransInputButtonClick()" func="do_goNext()" href="javascript:void(0)"><span class="ButtonLeft green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle green button_m" style="height:32px;width:38px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Back</span><span class="ButtonRight green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div></span></form></div><div id="nullprogress" class="reveal-modal" style="display:none"></div>
+<img title="spacer" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7MTcwMjY1OTQ3Mg==" border="0">
+
+</body></html>

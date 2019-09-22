@@ -1,0 +1,12 @@
+div.switch_on{
+    background: url(../images/switch_btn.png) no-repeat;
+    width: 82px;
+    height: 27px;
+    background-position: -5px top;
+}
+div.switch_off{
+    background: url(../images/switch_btn.png) no-repeat;
+    width: 82px;
+    height: 27px;
+    background-position: -99px top;
+}

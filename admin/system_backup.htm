@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="gt-ie8" lang="en">
+<!--<![endif]-->
+<!--[if lt IE 10]><meta http-equiv="X-UA-Compatible"content="IE=edge"><![endif]-->
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="../js/c_voda_main.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../js/arctransform.css">
+    <!--[if lt IE 9]>
+<link rel="stylesheet"type="text/css"media="screen"href="css/ie.css?ver=1564370054">
+<![endif]-->
+
+
+
+
+
+
+
+</head>
+
+<body onload="pre_init()">
+    <table margin="0" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+            <tr>
+                <td class="head_bold" width="100%" valign="top" height="100%">
+                    <div id="contentbody" style="visibility: visible;">
+                        <p id="top_left_menu" style="visibility: visible;"></p>
+                        <div class="subtitle"><label id="menu_nav">Administration&nbsp;&gt;&nbsp;Restore/Save/Upload Setting</label><label id="menu_sub"></label></div>
+                        <p></p>
+                        <table width="100%" cellspacing="0" cellpadding="10" border="0">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <form name="backup_configs" method="post" class="arctransformdone" style="">
+                                            <table class="vox20_table_nbl">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="subtitle2">
+                                                                <font id="230311" lang="1">Backup Configuration of Smart Modem</font>
+                                                            </p>
+                                                            <p class="normalText">
+                                                                <font id="230312" lang="1">Use the "Backup" tool to save the Smart Modem's current configuration to a file named "SmartModem_backup.cfg" on your PC. You can then use the "Restore" tool to restore the saved configuration
+                                                                    to the Smart Modem. Alternatively, you can use the "Restore to Factory Defaults" tool to force the Smart Modem to perform a power reset and restore the original factory settings.
+                                                                </font>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right">
+                                                            <div id="btn_Fback" class="arctransformdone arcTransformButton " style="min-width:148px;"><a id="Fback" onclick="return $(this).arcTransInputButtonClick()" func="evaltFback()" href="javascript:void(0)"><span class="ButtonLeft green" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle green" style="height:40px;width:200px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Backup Configuration</span><span class="ButtonRight green" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <form name="tfReb" enctype="multipart/form-data" method="post" target="OUTfrm" class="arctransformdone" style="">
+                                            <table class="vox20_table_nbl">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="subtitle2">
+                                                                <font id="230314" lang="1">Restore Configuration of Smart Modem</font>
+                                                            </p>
+                                                            <p class="normalText">
+                                                                <font id="230315" lang="1">Enter the path and enter the name of the backup file then click the Restore button below. You will be prompted to confirm the backup restoration.</font>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <table class="vox20_table_nbl">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="tdTitle" style="width:130px;" nowrap="nowrap">
+                                                                            <font id="230316" lang="1">Configuration File</font>
+                                                                        </td>
+                                                                        <td>
+                                                                            <input type="file" size="31" maxlength="31" name="restore">
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right">
+                                                            <div id="btn_FReback" class="arctransformdone arcTransformButton " style="min-width:61px;"><a id="FReback" onclick="return $(this).arcTransInputButtonClick()" func="evaltFReback()" href="javascript:void(0)"><span class="ButtonLeft green" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle green" style="height:40px;width:69px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Restore</span><span class="ButtonRight green" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <form method="POST" name="tF" target="OUTfrm" class="arctransformdone" style="">
+                                            <table class="vox20_table_nbl">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="subtitle2">
+                                                                <font id="230320" lang="1">Restore to Factory Defaults</font>
+                                                            </p>
+                                                            <p class="normalText">
+                                                                <font id="230321" lang="1">To restore the factory default settings of the system, try to click on the "Restore to Factory Defaults" button below. You will be asked to confirm your restore decision.
+                                                                </font>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right">
+                                                            <div id="btn_REstore" class="arctransformdone arcTransformButton " style="min-width:179px;"><a id="REstore" onclick="return $(this).arcTransInputButtonClick()" func="evaltFRestore()" href="javascript:void(0)"><span class="ButtonLeft green" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle green" style="height:40px;width:246px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Restore to Factory Defaults</span><span class="ButtonRight green" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <iframe id="backframe" src="../js/a.htm" style="border:0;margin:0;padding:0;width:0;height:0;" target="_blank"></iframe>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="progress" class="large reveal-modal" style="display:none"><span id="MSG" style="display:none"></span><br><br><br><span><span class="progresspanel" id="progresspanel"><div class="progressbar" id="progressbar"></div></span>&nbsp;&nbsp;&nbsp;<span id="timeRemain" style="display:none"></span></span><br>
+        <form
+            class="arctransformdone" style=""><span id="Error_btn" style="display:none"><div id="btn_err_btn" class="arctransformdone arcTransformButton button_m" style="min-width:44px;"><a id="err_btn" onclick="return $(this).arcTransInputButtonClick()" func="do_goNext()" href="javascript:void(0)"><span class="ButtonLeft green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span>
+            <span
+                class="ButtonMiddle green button_m" style="height:32px;width:38px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Back</span><span class="ButtonRight green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a>
+    </div>
+    </span>
+    </form>
+    </div>
+    <div id="nullprogress" class="reveal-modal" style="display:none"></div>
+    <img title="spacer" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7MzA5ODE4NzA4" border="0">
+
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"class="gt-ie8"><!--<![endif]-->
+<!--[if lt IE 10]><meta http-equiv="X-UA-Compatible"content="IE=edge"><![endif]-->
+<head>
+<title></title>
+<link rel="Shortcut Icon" type="image/png" href="images/favicon_32.png?cache_verCtrl=1">
+<meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+<link rel="stylesheet"type="text/css"media="screen"href="css/c_voda_main.css?ver=1564370054">
+<link rel="stylesheet"type="text/css"media="all"href="css/arctransform.css?ver=1564370054">
+<!--[if lt IE 9]>
+<link rel="stylesheet"type="text/css"media="screen"href="css/ie.css?ver=1564370054">
+<![endif]-->
+<script type="text/javascript">
+var LangJ=["login"];
+</script>
+<script type="text/javascript">var G_top=-2;var G_counter=0;</script>
+<script type="text/javascript"src="js/jquery-3.2.0.min.js?ver=1564370054"></script>
+<script type="text/javascript"src="js/global.js?ver=1564370054"></script>
+<script type="text/javascript"src="js/init_data.js?ver=1564370054"></script>
+<script type="text/javascript"src="js/jquery.arctransform.js?ver=1564370054"></script>
+<style>
+body{
+margin:30px 0px 0px 0px;
+background:#ffffff;
+color:#000000;
+font-family:arial;
+min-width:640px!important;
+min-width:700px;
+width:auto!important;
+width:100%;
+height:100%;}
+</style>
+<script type="text/javascript">
+var MT_Info=['RFS1','v6.00.06','build01'];
+top.ItemIdx=-1;
+var remaining_time=0;
+var countdownid,rtime_obj;
+var login_state="0";
+var loginUserIp="192.168.1.65 (3c:a0:67:af:f4:33)";
+remaining_time=parseInt('0');
+if(window.top!=window.self){
+window.top.location.href="login.htm";}
+document.onkeypress=kDown;
+if(document.layers){
+window.captureEvents(Event.KEYDOWN);}
+function kDown(e)
+{
+var key=0;
+if(window.event)key=window.event.keyCode;
+else if(e)key=e.which;
+if(key==13){checkfwVersion();return false;}}
+function checkfwVersion()
+{
+SetCookie("popup",1);
+var curTime=new Date();
+document.tF2.pws.value=do_encode(document.tF.ui_pws.value,true);
+document.tF2.usr.value=do_encode(document.tF.ui_user.value,true);
+document.tF2.action="login.cgi";
+return subForm({
+frm:document.tF2,
+genfrm:0,
+noprogress:1,
+wait:5});}
+function doLogout()
+{
+return false;}
+function ShowLang()
+{
+if(Lang_List.length<2){
+HiddenObject("u_lang");}
+else{
+DisplayObject("u_lang");}}
+function init()
+{
+DeleteCookie("sel_tabmenu");
+DeleteCookie("sel_menu");
+var flag=getIntQueryValue("err",0);
+var tmp=0;
+if(login_state=="1"){
+document.location.href="index.htm";}
+if(flag>0){
+document.getElementById("error_status_field").style.display="";
+if(flag===1){
+document.getElementById("error_status_field").innerHTML='<b><font color="red" size="3">'+getLangM("960203")+'</font></b>';
+tmp=1;
+if(tmp===0){
+document.getElementById("error_status_field").innerHTML='<b><font color="red" size="3">'+getLangM("960207")+'</font></b>';}}
+else if(flag===3){
+document.getElementById("error_status_field").innerHTML='<b><font color="red" size="3">'+getLangM("960208")+'</font></b>';}
+else if(flag===2){
+document.getElementById("login_field").style.display="none";
+document.getElementById("nologin_field").style.display="";
+if(loginUserIp==""||loginUserIp=="0.0.0.0"){
+loginUserIp="";}
+document.getElementById("login_status_field").innerHTML='<b><font color="red" size="4">'+getLangM("960204")+'</font></b><div style="margin-top:15px;word-wrap:break-word;word-break:break-all">* '+getLangM("960205")+': '+loginUserIp+'</div>';}
+else if(flag===8){
+document.getElementById("login_field").style.display="none";
+document.getElementById("nologin_field").style.display="";
+document.getElementById("login_status_field").innerHTML='<b><font color="red" size="4">'+getLangM("960206")+'</font></b>';}
+else if(flag===7){
+document.getElementById("login_field").style.display="none";
+document.getElementById("nologin_field").style.display="";
+document.getElementById("login_status_field").innerHTML='<b><font color="red" size="3">{id1}</font></b>'.replace("{id1}",getLangM("960209"));
+rtime_obj=document.getElementById("rtime");
+rtime_obj.innerHTML=remaining_time;
+countdownid=window.setInterval(countdownfunc,1000);}
+else{
+document.getElementById("error_status_field").style.display="none";}}
+if(history.pushState!=undefined){
+history.pushState("",document.title,window.location.pathname);}
+SetTitle(getLangM("960001"));
+ShowMenu();
+document.tF.ui_pws.focus();
+document.tF.ui_user.focus();
+set_login_reload_time();
+top.topFrame=window;}
+function countdownfunc()
+{
+rtime_obj.innerHTML=remaining_time;
+if(remaining_time==0){
+clearInterval(countdownid);
+setTimeout("top.location.href='login.htm';",1000);}
+remaining_time--;}
+function set_login_reload_time()
+{
+setTimeout(function(){
+window.top.location.href="login.htm";},10*60*1000);}
+</script>
+</head>
+<body class="background_body"onload="init()">
+<table width="100%"height="100%"border="0"cellspacing="0"cellpadding="0"id="contentbody"style="display:none;">
+<tr>
+<td width="30">&nbsp;</td>
+<td colspan="2"width="100%">
+<div id="hiddenmenu">
+<table style="padding:0; margin:1px 0 0 0; background:#ffffff;"width="100%">
+<tr>
+<td>
+<div class="logo">
+<img src="images/logo-spark.svg?cache_verCtrl=1" width="180">
+</div>
+</td>
+<td style="width:100%; margin:0; padding:0; vertical-align:bottom;">
+<div id="top_nav_menu"style="margin-bottom:0; padding:0;"></div>
+<a href="javascript:void(0)"onClick="return doLogout();"id="u_login"class="nav_logout gray"style="display:none">
+<img class="normal gray"id="u_login_icon"src="images/icon/signout.png?ver=1564370054"border="0"width="26"vspace="7"hspace="8">
+</a>
+<a href="javascript:void(0)"onClick="return ShowLangMenu(-1)"id="u_lang"class="nav_lang"style="display:none">
+<img class="normal"id="u_lang_icon"src="images/icon/globe.png?ver=1564370054"style="border:none; margin:7px 8px 7px 8px;">
+</a>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td width="30">&nbsp;</td>
+</tr>
+<tr>
+<td width="30"class="left_section"></td>
+<td colspan="2"width="100%"bgcolor="white"class="header_section">
+<form action="http://192.168.1.254/cgi-bin/login.exe"method="post"name="tF"target="_top">
+<table width="100%"border="0"cellspacing="0"cellpadding="0"height="80%">
+<tr>
+<td>
+<div id="login_field"align="center">
+<br>
+<br>
+<table width="200"border="0"cellspacing="1"cellpadding="5">
+<colgroup>
+<col width="10%">
+<col width="30%">
+<col width="50%">
+<col width="10%">
+</colgroup>
+<tr>
+<td height="10"colspan="4"align="center">
+<b><font face="Verdana, Arial"size="4"color="#323232"id="960001"></font></b>
+</td>
+</tr>
+<tr>
+<td height="20"colspan="4"align="center">
+<hr class="config_hr"/>
+</td>
+</tr>
+<tr>
+<td width="80">&nbsp;</td>
+<td class="tdText"><font id="960002"></font></td>
+<td class="tdText">
+<input type="text"name="ui_user"maxLength="16"value="admin"autocomplete="off"class="input_18_table"disabled>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="80">&nbsp;</td>
+<td class="tdText"><font id="960003"></font></td>
+<td class="tdText">
+<input type="password"name="ui_pws"maxLength="16"value=""autocomplete="off"class="input_18_table">
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td colspan="4"align="center">
+<input type="button"id="960004"onClick="checkfwVersion();">
+</td>
+</tr>
+<tr>
+<td colspan="4"align="center">
+<span style="display:none"id="error_status_field"></span>
+</td>
+</tr>
+<tr>
+<td width="100%"height="20"colspan="4"align="center">
+</td>
+</tr>
+</table>
+</div>
+<div align="center"id="nologin_field"style="display:none;"><br><br>
+<table width="200"border="0"cellspacing="1"cellpadding="5"align="center"height="200px">
+<tr>
+<td height="10"colspan="4"align="center">
+<b><font face="Verdana, Arial"size="4"color="#323232"id="960001"></font></b>
+</td>
+</tr>
+<tr>
+<td height="20"colspan="4"align="center">
+<hr class="config_hr"/>
+</td>
+</tr>
+<tr>
+<td colspan="4"align="center"height="80%">
+<span id="login_status_field"></span>
+</td>
+</tr>
+<tr>
+<td width="100%"height="20"colspan="4"align="center">
+<hr class="config_hr"/>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</form>
+</td>
+<td width="30"class="right_section"></td>
+</tr>
+<tr>
+<td width="30"><img src="images/space.png?ver=1564370054"border="0"width="30"height="30"></td>
+<td colspan="2"width="100%"class="footer_section">&nbsp;</td>
+<td width="30"><img src="images/space.png?ver=1564370054"border="0"width="30"height="30"></td>
+</tr>
+</table>
+<form id="myForm"action="http://192.168.1.254/cgi-bin/login.exe"method="post"name="tF2"target="_top">
+<input type="hidden"name="pws">
+<input type="hidden"name="usr">
+</form>
+<form action="http://192.168.1.254/cgi-bin/changef.exe"method="post"name="tFF"target="_top">
+<input type="hidden"name="language_flag"value="1">
+<input type="hidden"name="menupage"value="">
+</form>
+<img title=spacer src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7MTg3OTQ3MDEwMg==" border=0>
+</body>
+</html>

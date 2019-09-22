@@ -1,0 +1,165 @@
+.clear{
+    clear: both;
+}
+.dev_from, .dev_type, .dev_name, .switch_btn{
+    margin-left: 20px;
+    float: left;
+}
+.dev_from img, .dev_type img{
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+}
+table[name=list_table]{
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+table[name=list_table] tr.list_row th{
+    text-align: left;
+    border-bottom: 2px solid #999;
+    padding-left: 10px;
+    line-height: 30px;
+}
+table[name=list_table] tr.list_row td{
+    line-height: 40px;
+    border-bottom: 1px solid #999;
+}
+table[name=list_table] tr.list_row.open td{
+    /*color: #5bc0de;*/
+    border-bottom: 0;
+}
+table[name=list_table] tr.list_sch_open{
+    border-bottom: 1px solid #999;
+}
+table[name=list_table] div.switch_btn{
+    background: url(../images/switch_btn.png) no-repeat;
+    cursor: pointer;
+}
+table[name=list_table] div.switch_on{
+    width: 82px;
+    height: 27px;
+    background-position:  -5px top;
+}
+table[name=list_table] div.switch_off{
+    /*background: url(../images/switch_btn.png) no-repeat;*/
+    width: 80px;
+    height: 25px;
+    background-position: -99px top;
+}
+table[name=list_table] .caret{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+table[name=list_table] .caret.down{
+    border-top: 6px dashed;
+}
+table[name=list_table] .caret.up{
+    border-bottom: 6px dashed;
+}
+.pc_detail{
+    cursor: pointer;
+}
+.pc_detail.open{
+    /*color:#5bc0de;*/
+}
+.schedule_div {
+    position: relative;
+    margin: 20px 0;
+}
+.schedule_div table{
+    border-collapse: collapse;
+}
+.schedule_div td{
+    border: 1px solid #5e6a6b;
+    /*half hour width: 10px;*/
+    /*width: 20px;*/
+    /*half hour height: 20px;*/
+    height: 25px;
+}
+.schedule_div th{
+    padding-right: 7px;
+    line-height: 20px;
+}
+.schedule_div table td.sch_col{
+    background-color: #ccc;
+}
+.schedule_div table td.selected{
+    background-color: #63ba5f;
+    cursor: default;
+}
+.schedule_div table td.dragable{
+    cursor: pointer;
+}
+.schedule_div table td.edge{
+    cursor: col-resize;
+}
+.schedule_div td.sch_clear{
+    border: 0px;
+    padding-left: 10px;
+    /*display: inline-block;*/
+    /*half hour line-height: 20px;*/
+    /*line-height: 25px;*/
+}
+
+.schedule_div .line_24hour div{
+    float: left;
+    /*half hour width: 10px;*/
+    /*width: 20px;*/
+    border-left: 1px solid #5e6a6b;
+    vertical-align: bottom;
+}
+.schedule_div div.long_div{
+    height: 13px;
+}
+.schedule_div div.short_div{
+    height: 8px;
+}
+.schedule_div .word_24hour div{
+    float: left;
+    font-size: 12px;
+}
+.schedule_div .sch_status .active{
+    border-left: 1px solid #5e6a6b;
+    border-top: 1px solid #5e6a6b;
+    border-bottom: 1px solid #5e6a6b;
+    width:20px;
+    height: 25px;
+    background-color: #63ba5f;
+    float: left;
+}
+.schedule_div .sch_status .status_str{
+    margin-left: 10px;
+    line-height: 25px;
+    float: left;
+}
+.schedule_div .sch_status .disable{
+    border-left: 1px solid #5e6a6b;
+    border-top: 1px solid #5e6a6b;
+    border-bottom: 1px solid #5e6a6b;
+    width:20px;
+    height: 25px;
+    float: left;
+}
+hr{
+    border-color:#47537E;
+    border-style:solid;
+    background-color: #47537E;
+    color:#47537E;
+}
+#nav_today{
+    margin-left:10px;
+}
+.del_btn{
+    background-image: url(../images/delete_btn.png);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50px;
+    cursor:pointer;
+}

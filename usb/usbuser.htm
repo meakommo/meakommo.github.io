@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="gt-ie8" lang="en">
+<!--<![endif]-->
+<!--[if lt IE 10]><meta http-equiv="X-UA-Compatible"content="IE=edge"><![endif]-->
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="../js/c_voda_main.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../js/arctransform.css">
+    <!--[if lt IE 9]>
+<link rel="stylesheet"type="text/css"media="screen"href="css/ie.css?ver=1564370054">
+<![endif]-->
+
+
+
+
+
+
+
+</head>
+
+<body onload="pre_init()">
+    <table margin="0" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+            <tr>
+                <td class="head_bold" width="100%" valign="top" height="100%">
+                    <div id="contentbody" style="visibility: visible;">
+                        <p id="top_left_menu" style="visibility: visible;"></p>
+                        <div class="subtitle"><label id="menu_nav">USB&nbsp;&gt;&nbsp;User Management</label><label id="menu_sub"></label></div>
+                        <p></p>
+                        <form id="idFormMain" name="idFormMain" method="post" class="arctransformdone" style="">
+                            <table width="100%" height="0" cellspacing="0" cellpadding="10" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:top;">
+                                            <p class="normalText"><span id="262101" lang="1">User management for USB Disk.</span></p>
+                                            <table class="vox20_table_nbl">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="tdTitle">
+                                                            <span class="arcTransformCheckboxWrapper"><a href="javascript:return void(0)" class="arcTransformCheckbox undefined" onclick="return $(this).arcTransformCheckBoxLnkClick()"></a><input type="checkbox" id="id_allow_guest" name="id_allow_guest" value="1" onclick="event_allow_guest_login();" class="arcTransformHidden" onchange="return $(this).arcTransformCheckBoxChange();"></span>
+                                                            <span id="262016" lang="1">Allow anonymous login</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr id="id_tr_user_list" style="visibility: visible;">
+                                        <td style="vertical-align:top;">
+                                            <p class="subtitle2"><span id="262010" lang="1">User Account</span></p>
+                                            <table id="id_table_user" class="vox20_table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="tdTitle"><span id="262011" lang="1">User Name</span></th>
+                                                        <th class="tdTitle"><span id="262012" lang="1">Read</span></th>
+                                                        <th class="tdTitle"><span id="262013" lang="1">Write</span></th>
+                                                        <th class="tdTitle"><span id="262014" lang="1">Configure</span></th>
+                                                    </tr>
+                                                    <tr style="">
+                                                        <td class="tdText">admin</td>
+                                                        <td class="tdText"><img src="../js/icon_active.png" style="width:24px; height:24px"></td>
+                                                        <td class="tdText"><img src="../js/icon_inactive.png" style="width:24px; height:24px"></td>
+                                                        <td class="tdText">
+                                                            <div id="btn_EntryEdit0" class="arctransformdone arcTransformButton button_m" style="min-width:39px;"><a id="EntryEdit0" onclick="return $(this).arcTransInputButtonClick()" func="entry_add(0,0)" href="javascript:void(0)"><span class="ButtonLeft green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle green button_m" style="height:32px;width:32px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Edit</span><span class="ButtonRight green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>
+                                                            <div
+                                                                id="btn_EntryDel0" class="arctransformdone arcTransformButton button_m" style="min-width:52px;"><a id="EntryDel0" onclick="return $(this).arcTransInputButtonClick()" func="entry_del(0)" href="javascript:void(0)"><span class="ButtonLeft button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle button_m" style="height:32px;width:49px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Delete</span><span class="ButtonRight button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>
+                    </td>
+                    </tr>
+                    <tr style="">
+                        <td colspan="3" class="tdLast">&nbsp;</td>
+                        <td class="tdLast">
+                            <div id="btn_idBtnAddEntry" class="arctransformdone arcTransformButton button_m" style="min-width:70px;"><a id="idBtnAddEntry" onclick="return $(this).arcTransInputButtonClick()" func="entry_add(1,1);" href="javascript:void(0)"><span class="ButtonLeft blue button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle blue button_m" style="height:32px;width:72px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Add User</span><span class="ButtonRight blue button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr id="id_tr_user_edit" style="display:none;">
+                        <td style="vertical-align:top;">
+                            <p class="subtitle2"><span id="id_span_title_user_account"></span></p>
+                            <table class="vox20_table_nbl">
+                                <tbody>
+                                    <tr>
+                                        <td class="tdTitle">
+                                            <font id="262011" lang="1">User Name</font>
+                                        </td>
+                                        <td class="tdText">
+                                            <span class="arcTransformInputWrapper " style="width:233px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:212px"><input class="arctransformdone arcTransformInput " value="admin" name="id_user_name" size="20" maxlength="20" id="id_user_name" style="width:212px" type="text" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdTitle"><span id="262032" lang="1">Password</span></td>
+                                        <td class="tdText">
+                                            <span class="arcTransformInputWrapper " style="width:233px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:212px"><input class="arctransformdone arcTransformInput " value="Adminadmin!1" name="id_user_password" size="20" maxlength="17" id="id_user_password" style="width:212px" type="password" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdTitle"><span id="262033" lang="1">Password Confirmation</span></td>
+                                        <td class="tdText">
+                                            <span class="arcTransformInputWrapper " style="width:233px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:212px"><input class="arctransformdone arcTransformInput " value="" name="id_user_confirmation" size="20" maxlength="17" id="id_user_confirmation" style="width:212px" type="password" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tdTitle" width="200"><span id="262034" lang="1">Access Type</span></td>
+                                        <td class="tdText">
+                                            <div class="arcTransformSelectWrapper " style="z-index: 100; width: 121px;">
+                                                <div><span style="width: 86px;">Read Only</span>
+                                                    <a href="#" class="arcTransformSelectOpen"></a>
+                                                </div>
+                                                <ul style="width: 123px; display: none; height: 54px; visibility: visible; overflow: hidden;">
+                                                    <li><a href="#" index="0" class="selected">Read Only</a></li>
+                                                    <li><a href="#" index="1">Read &amp; Write</a></li>
+                                                </ul><select id="id_user_access" name="id_user_access" class="arcTransformHidden">
+<option value="0" id="262080" selected="selected" lang="1">Read Only</option>
+<option value="1" id="262081" lang="1">Read &amp; Write</option>
+</select></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr id="id_tr_button" style="display:none;">
+                        <td style="padding-left:250px;">
+                            <div id="btn_save" class="arctransformdone arcTransformButton " style="min-width:96px;"><a id="save" onclick="return $(this).arcTransInputButtonClick()" func="evaltF()" href="javascript:void(0)"><span class="ButtonLeft green" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle green" style="height:40px;width:122px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Save settings</span><span class="ButtonRight green" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>&nbsp;
+                            <div id="btn_cancel" class="arctransformdone arcTransformButton " style="min-width:56px;"><a id="cancel" onclick="return $(this).arcTransInputButtonClick()" func="event_switch(0);" href="javascript:void(0)"><span class="ButtonLeft " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle " style="height:40px;width:62px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Cancel</span><span class="ButtonRight " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>&nbsp;
+                        </td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </form>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="progress" class="large reveal-modal" style="display:none"><span id="MSG" style="display:none"></span><br><br><br><span><span class="progresspanel" id="progresspanel"><div class="progressbar" id="progressbar"></div></span>&nbsp;&nbsp;&nbsp;<span id="timeRemain" style="display:none"></span></span><br>
+        <form
+            class="arctransformdone" style=""><span id="Error_btn" style="display:none"><div id="btn_err_btn" class="arctransformdone arcTransformButton button_m" style="min-width:44px;"><a id="err_btn" onclick="return $(this).arcTransInputButtonClick()" func="do_goNext()" href="javascript:void(0)"><span class="ButtonLeft green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span>
+            <span
+                class="ButtonMiddle green button_m" style="height:32px;width:38px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Back</span><span class="ButtonRight green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a>
+    </div>
+    </span>
+    </form>
+    </div>
+    <div id="nullprogress" class="reveal-modal" style="display:none"></div>
+    <img title="spacer" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7NTIwMDgzNzM0" border="0">
+
+</body>
+
+</html>

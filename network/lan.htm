@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="gt-ie8" lang="en">
+<!--<![endif]-->
+<!--[if lt IE 10]><meta http-equiv="X-UA-Compatible"content="IE=edge"><![endif]-->
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="../js/c_voda_main.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../js/arctransform.css">
+    <!--[if lt IE 9]>
+<link rel="stylesheet"type="text/css"media="screen"href="css/ie.css?ver=1564370054">
+<![endif]-->
+
+
+
+
+
+
+
+
+</head>
+
+<body onload="pre_init()">
+    <table margin="0" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+            <tr>
+                <td class="head_bold" width="100%" valign="top" height="100%">
+                    <div id="contentbody" style="visibility: visible;">
+                        <p id="top_left_menu" style="visibility: visible;"></p>
+                        <div class="subtitle"><label id="menu_nav">Network&nbsp;&gt;&nbsp;LAN</label><label id="menu_sub"></label></div>
+                        <p></p>
+                        <form name="tF" method="post" target="OUTfrm" class="arctransformdone" style="">
+                            <table width="100%" cellspacing="0" cellpadding="10" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:top;">
+                                            <p class="normalText">
+                                                <label id="360200" lang="1">You can enable DHCP to dynamically allocate 
+IP addresses to your client PCs, or configure filtering functions based 
+on specific clients or protocols.The Smart Modem must have an IP address
+ for the local network.</label>
+                                            </p>
+                                            <p class="normalText cHidden">
+                                                <label id="360201" lang="1">VLAN Binding is to define the port-based 
+VLAN belonging of the physical ports. Each physical port can be assigned
+ to any configured VLAN profile.</label>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align:top;">
+                                            <p class="subtitle2"><label id="360010" lang="1">LAN IP</label></p>
+                                            <table class="vox20_table_nbl">
+                                                <tbody>
+                                                    <tr id="lan_if" class="cHidden">
+                                                        <td class="tdTitle"><label id="360011" lang="1">LAN Interface</label></td>
+                                                        <td class="tdText">
+                                                            <div class="arcTransformSelectWrapper " style="z-index: 100; width: 209px;">
+                                                                <div><span style="width: 174px;">Default</span>
+                                                                    <a href="#" class="arcTransformSelectOpen"></a>
+                                                                </div>
+                                                                <ul style="width: 211px; display: none; height: 54px; visibility: visible; overflow: hidden;">
+                                                                    <li><a href="#" index="0" class="selected">Default</a></li>
+                                                                    <li><a href="#" index="1">VLAN2</a></li>
+                                                                </ul><select name="LAN_Interface" class="selectList_178 arcTransformHidden" onchange="InterfaceChange();">
+<option value="0" id="360101" selected="selected" lang="1">Default</option>
+<option value="1" id="360102" lang="1">VLAN2</option>
+</select></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdTitle" width="200"><label id="360012" lang="1">IP Address</label></td>
+                                                        <td class="tdText">
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " value="192" name="lan_ip" size="" maxlength="3" style="width:51px" type="" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="Blur(0)" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " value="168" name="lan_ip" size="" maxlength="3" style="width:51px" type="" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="Blur(1)" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " value="1" name="lan_ip" size="" maxlength="3" style="width:51px" type="" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" onchange="showhideL()" func_blur="Blur(2)" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " value="254" name="lan_ip" size="" maxlength="3" style="width:51px" type="" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdTitle"><label id="360013" lang="1">IP Subnet Mask</label></td>
+                                                        <td class="tdText">
+                                                            <span class="arcTransformInputWrapper  arcTransformInputWrapperDisabled" style="width:72px;"><div class="arcTransformInputInner arcTransformInputInnerDisabled"><div style="width:51px"><input class="arctransformdone arcTransformInput  arcTransformDisabled " value="255" name="lan_mask0" size="" maxlength="" style="width:51px" type="" disabled="disabled" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper  arcTransformInputWrapperDisabled" style="width:72px;"><div class="arcTransformInputInner arcTransformInputInnerDisabled"><div style="width:51px"><input class="arctransformdone arcTransformInput  arcTransformDisabled " value="255" name="lan_mask1" size="" maxlength="" style="width:51px" type="" disabled="disabled" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper  arcTransformInputWrapperDisabled" style="width:72px;"><div class="arcTransformInputInner arcTransformInputInnerDisabled"><div style="width:51px"><input class="arctransformdone arcTransformInput  arcTransformDisabled " value="255" name="lan_mask2" size="" maxlength="" style="width:51px" type="" disabled="disabled" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " value="0" name="lan_mask" size="" maxlength="3" style="width:51px" type="" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdTitle"><label id="360014" lang="1">DHCP Server</label></td>
+                                                        <td class="tdText">
+                                                            <span class="arcTransformCheckboxWrapper"><a href="javascript:return void(0)" class="arcTransformCheckbox undefined arcTransformChecked" onclick="return $(this).arcTransformCheckBoxLnkClick()"></a><input type="checkbox" name="dhcp_enable" onclick="showhideL();" value="1" nocheck="0" checked="checked" class="arcTransformHidden" onchange="return $(this).arcTransformCheckBoxChange();"></span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr id="DHCP_Server" style="visibility: visible;">
+                                        <td>
+                                            <p class="subtitle2"><label id="360015" lang="1">IP Address Pool</label></p>
+                                            <table class="vox20_table_nbl">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="tdTitle" width="200"><label id="360016" lang="1">Start IP</label></td>
+                                                        <td class="tdText">
+                                                            <span class="arcTransformInputWrapper  arcTransformInputWrapperDisabled" style="width:72px;"><div class="arcTransformInputInner arcTransformInputInnerDisabled"><div style="width:51px"><input class="arctransformdone arcTransformInput  arcTransformDisabled " value="192" name="dhcp_startip" size="" maxlength="3" style="width:51px" type="text" disabled="disabled" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper  arcTransformInputWrapperDisabled" style="width:72px;"><div class="arcTransformInputInner arcTransformInputInnerDisabled"><div style="width:51px"><input class="arctransformdone arcTransformInput  arcTransformDisabled " value="168" name="dhcp_startip" size="" maxlength="3" style="width:51px" type="text" disabled="disabled" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper  arcTransformInputWrapperDisabled" style="width:72px;"><div class="arcTransformInputInner arcTransformInputInnerDisabled"><div style="width:51px"><input class="arctransformdone arcTransformInput  arcTransformDisabled " value="1" name="dhcp_startip" size="" maxlength="3" style="width:51px" type="text" disabled="disabled" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " value="64" name="dhcp_startip" size="" maxlength="3" style="width:51px" type="text" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdTitle"><label id="360017" lang="1">End IP</label></td>
+                                                        <td class="tdText">
+                                                            <span class="arcTransformInputWrapper  arcTransformInputWrapperDisabled" style="width:72px;"><div class="arcTransformInputInner arcTransformInputInnerDisabled"><div style="width:51px"><input class="arctransformdone arcTransformInput  arcTransformDisabled " value="192" name="dhcp_endip" size="" maxlength="3" style="width:51px" type="text" disabled="disabled" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper  arcTransformInputWrapperDisabled" style="width:72px;"><div class="arcTransformInputInner arcTransformInputInnerDisabled"><div style="width:51px"><input class="arctransformdone arcTransformInput  arcTransformDisabled " value="168" name="dhcp_endip" size="" maxlength="3" style="width:51px" type="text" disabled="disabled" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper  arcTransformInputWrapperDisabled" style="width:72px;"><div class="arcTransformInputInner arcTransformInputInnerDisabled"><div style="width:51px"><input class="arctransformdone arcTransformInput  arcTransformDisabled " value="1" name="dhcp_endip" size="" maxlength="3" style="width:51px" type="text" disabled="disabled" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " value="253" name="dhcp_endip" size="" maxlength="3" style="width:51px" type="text" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdTitle"><label id="360022" lang="1">ISP DNS</label></td>
+                                                        <td class="tdText">
+                                                            <span class="arcTransformCheckboxWrapper"><a href="javascript:return void(0)" class="arcTransformCheckbox undefined" onclick="return $(this).arcTransformCheckBoxLnkClick()"></a><input type="checkbox" name="en_ispdns" value="0" nocheck="0" class="arcTransformHidden" onchange="return $(this).arcTransformCheckBoxChange();"></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdTitle"><label id="360018" lang="1">Domain Name</label></td>
+                                                        <td class="tdText">
+                                                            <span class="arcTransformInputWrapper " style="width:233px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:212px"><input class="arctransformdone arcTransformInput " value="home" name="domain_name" size="20" maxlength="39" style="width:212px" type="text" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdTitle" width="200"><label id="360019" lang="1">Lease Time</label></td>
+                                                        <td class="tdText">
+                                                            <div class="arcTransformSelectWrapper " style="z-index: 99; width: 209px;">
+                                                                <div><span style="width: 174px;">One Day</span>
+                                                                    <a href="#" class="arcTransformSelectOpen"></a>
+                                                                </div>
+                                                                <ul style="width: 211px; display: none; height: 208px; visibility: visible; overflow: hidden;">
+                                                                    <li><a href="#" index="0">Half Hour</a></li>
+                                                                    <li><a href="#" index="1">One Hour</a></li>
+                                                                    <li><a href="#" index="2">Two Hours</a></li>
+                                                                    <li><a href="#" index="3">Half Day</a></li>
+                                                                    <li><a href="#" index="4" class="selected">One Day</a></li>
+                                                                    <li><a href="#" index="5">Two Days</a></li>
+                                                                    <li><a href="#" index="6">One Week</a></li>
+                                                                    <li><a href="#" index="7">Two Weeks</a></li>
+                                                                </ul><select name="leasetime" class="selectList_178 arcTransformHidden">
+<option value="30" id="360111" lang="1">Half Hour</option>
+<option value="60" id="360112" lang="1">One Hour</option>
+<option value="120" id="360113" lang="1">Two Hours</option>
+<option value="720" id="360114" lang="1">Half Day</option>
+<option value="1440" id="360115" selected="selected" lang="1">One Day</option>
+<option value="2880" id="360116" lang="1">Two Days</option>
+<option value="10080" id="360117" lang="1">One Week</option>
+<option value="20160" id="360118" lang="1">Two Weeks</option>
+</select></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdTitle"><label id="360023" lang="1">Customer DNS</label></td>
+                                                        <td class="tdText">
+                                                            <span class="arcTransformCheckboxWrapper"><a href="javascript:return void(0)" class="arcTransformCheckbox undefined" onclick="return $(this).arcTransformCheckBoxLnkClick()"></a><input type="checkbox" name="cust_dns_enable" id="cust_dns_enable" value="0" nocheck="0" class="arcTransformHidden" onchange="return $(this).arcTransformCheckBoxChange();"></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdTitle"><label id="360024" lang="1">Primary DNS</label></td>
+                                                        <td class="tdText">
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " name="cust_dns_pri" size="" maxlength="3" style="width:51px" type="text" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " name="cust_dns_pri" size="" maxlength="3" style="width:51px" type="text" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " name="cust_dns_pri" size="" maxlength="3" style="width:51px" type="text" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " name="cust_dns_pri" size="" maxlength="3" style="width:51px" type="text" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="tdTitle"><label id="360025" lang="1">Secondary DNS</label></td>
+                                                        <td class="tdText">
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " name="cust_dns_sec" size="" maxlength="3" style="width:51px" type="text" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " name="cust_dns_sec" size="" maxlength="3" style="width:51px" type="text" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " name="cust_dns_sec" size="" maxlength="3" style="width:51px" type="text" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                            <span class="cIPv4_dot">.</span>
+                                                            <span class="arcTransformInputWrapper " style="width:72px;"><div class="arcTransformInputInner arcTransformInputInner"><div style="width:51px"><input class="arctransformdone arcTransformInput " name="cust_dns_sec" size="" maxlength="3" style="width:51px" type="text" onfocus="$(this).arcTransInputHover(0)" onblur="$(this).arcTransInputHover(1)" onmouseover="$(this).arcTransInputHover(2)" onmouseout="$(this).arcTransInputHover(3)" func_blur="" func_focus=""></div></div></span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left:250px;">
+                                            <div id="btn_helpb" class="arctransformdone arcTransformButton " style="min-width:42px;"><a id="helpb" onclick="return $(this).arcTransInputButtonClick()" func="moreInfoWin('lanip');" href="javascript:void(0)"><span class="ButtonLeft " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle " style="height:40px;width:41px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Help</span><span class="ButtonRight " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>&nbsp;
+                                            <div id="btn_save" class="arctransformdone arcTransformButton " style="min-width:96px;"><a id="save" onclick="return $(this).arcTransInputButtonClick()" func="evaltF()" href="javascript:void(0)"><span class="ButtonLeft green" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle green" style="height:40px;width:122px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Save settings</span><span class="ButtonRight green" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>&nbsp;
+                                            <div id="btn_cancel" class="arctransformdone arcTransformButton " style="min-width:56px;"><a id="cancel" onclick="return $(this).arcTransInputButtonClick()" func="ReloadMe()" href="javascript:void(0)"><span class="ButtonLeft " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle " style="height:40px;width:62px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Cancel</span><span class="ButtonRight " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>&nbsp;
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="progress" class="large reveal-modal" style="display:none"><span id="MSG" style="display:none"></span><br><br><br><span><span class="progresspanel" id="progresspanel"><div class="progressbar" id="progressbar"></div></span>&nbsp;&nbsp;&nbsp;<span id="timeRemain" style="display:none"></span></span><br>
+        <form class="arctransformdone" style=""><span id="Error_btn" style="display:none"><div id="btn_err_btn" class="arctransformdone arcTransformButton button_m" style="min-width:44px;"><a id="err_btn" onclick="return $(this).arcTransInputButtonClick()" func="do_goNext()" href="javascript:void(0)"><span class="ButtonLeft green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span>
+            <span class="ButtonMiddle green button_m" style="height:32px;width:38px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Back</span>
+            <span
+                class="ButtonRight green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span>
+                </a>
+    </div>
+    </span>
+    </form>
+    </div>
+    <div id="nullprogress" class="reveal-modal" style="display:none"></div>
+    <img title="spacer" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7OTY3MjQ2NjU4" border="0">
+
+</body>
+
+</html>
