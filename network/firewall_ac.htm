@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="gt-ie8" lang="en">
+<!--<![endif]-->
+<!--[if lt IE 10]><meta http-equiv="X-UA-Compatible"content="IE=edge"><![endif]-->
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="../js/c_voda_main.css">
+    <link rel="stylesheet" type="text/css" media="all" href="../js/arctransform.css">
+    <!--[if lt IE 9]>
+<link rel="stylesheet"type="text/css"media="screen"href="css/ie.css?ver=1564370054">
+<![endif]-->
+
+
+
+
+
+
+</head>
+
+<body onload="pre_init()">
+    <table margin="0" width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+            <tr>
+                <td class="head_bold" width="100%" valign="top" height="100%">
+                    <div id="contentbody" style="visibility: visible;">
+                        <p id="top_left_menu" style="visibility: visible;"></p>
+                        <div class="subtitle"><label id="menu_nav">Network&nbsp;&gt;&nbsp;Firewall&nbsp;&gt;&nbsp;Access Control</label><label id="menu_sub"></label></div>
+                        <p></p>
+                        <form name="tF" method="post" target="OUTfrm" class="arctransformdone" style="">
+                            <input type="hidden" name="filter_entry_del" value="">
+                            <table width="100%" height="0" cellspacing="0" cellpadding="10" border="0" align="center">
+                                <tbody>
+                                    <tr>
+                                        <td style="vertical-align:top;">
+                                            <p class="normalText">
+                                                <font id="171300" lang="1">Access Control allows users to define the traffic type permitted or not-permitted to WAN port service. This page includes IP address filtering and MAC address filtering.</font>
+                                            </p>
+                                            <table class="vox20_table_nbl">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="tdTitle">
+                                                            <span class="arcTransformCheckboxWrapper"><a href="javascript:return void(0)" class="arcTransformCheckbox undefined arcTransformChecked" onclick="return $(this).arcTransformCheckBoxLnkClick()"></a><input type="checkbox" name="ac_enable" value="1" nocheck="0" checked="checked" class="arcTransformHidden" onchange="return $(this).arcTransformCheckBoxChange();"></span>
+                                                            <font id="171010" lang="1">Activate Access Control</font>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align:top;">
+                                            <p class="subtitle2">
+                                                <font id="171011" lang="1">Access Control List (Max Limit: 32)</font>
+                                            </p>
+                                            <table id="id_table_filter" class="vox20_table">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="tdTitle" width="25%">
+                                                            <font id="171012" lang="1">Rule Description</font>
+                                                        </th>
+                                                        <th class="tdTitle" width="145">
+                                                            <font id="171013" lang="1">IP Address</font>
+                                                        </th>
+                                                        <th class="tdTitle" width="auto">
+                                                            <font id="171014" lang="1">Service</font>
+                                                        </th>
+                                                        <th class="tdTitle" width="120">
+                                                            <font id="171015" lang="1">Schedule Rule</font>
+                                                        </th>
+                                                        <th class="tdTitle" width="140">
+                                                            <font id="171016" lang="1">Configure</font>
+                                                        </th>
+                                                    </tr>
+                                                    <tr style="">
+                                                        <td colspan="5" class="tdText" style="text-align:center;">No any rule of Filter</td>
+                                                    </tr>
+                                                    <tr style="">
+                                                        <td colspan="4" class="tdText tdLast">&nbsp;</td>
+                                                        <td class="tdText tdLast">
+                                                            <div id="btn_add_entry" class="arctransformdone arcTransformButton button_m" style="min-width:69px;"><a id="add_entry" onclick="return $(this).arcTransInputButtonClick()" func="check_rule_num()" href="javascript:void(0)"><span class="ButtonLeft blue button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle blue button_m" style="height:32px;width:71px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Add Rule</span><span class="ButtonRight blue button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left:250px;">
+                                            <div id="btn_save" class="arctransformdone arcTransformButton " style="min-width:96px;"><a id="save" onclick="return $(this).arcTransInputButtonClick()" func="evaltF()" href="javascript:void(0)"><span class="ButtonLeft green" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle green" style="height:40px;width:122px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Save settings</span><span class="ButtonRight green" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>&nbsp;
+                                            <div id="btn_cancel" class="arctransformdone arcTransformButton " style="min-width:56px;"><a id="cancel" onclick="return $(this).arcTransInputButtonClick()" func="ReloadMe()" href="javascript:void(0)"><span class="ButtonLeft " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span><span class="ButtonMiddle " style="height:40px;width:62px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Cancel</span><span class="ButtonRight " onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a></div>&nbsp;
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>&nbsp;</p>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="progress" class="large reveal-modal" style="display:none"><span id="MSG" style="display:none"></span><br><br><br><span><span class="progresspanel" id="progresspanel"><div class="progressbar" id="progressbar"></div></span>&nbsp;&nbsp;&nbsp;<span id="timeRemain" style="display:none"></span></span><br>
+        <form
+            class="arctransformdone" style=""><span id="Error_btn" style="display:none"><div id="btn_err_btn" class="arctransformdone arcTransformButton button_m" style="min-width:44px;"><a id="err_btn" onclick="return $(this).arcTransInputButtonClick()" func="do_goNext()" href="javascript:void(0)"><span class="ButtonLeft green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span>
+            <span
+                class="ButtonMiddle green button_m" style="height:32px;width:38px;" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)">Back</span><span class="ButtonRight green button_m" onmousedown="$(this).arcTransButtonHover(0)" onmouseup="$(this).arcTransButtonHover(1)" onmouseover="$(this).arcTransButtonHover(2)" onmouseout="$(this).arcTransButtonHover(3)"></span></a>
+    </div>
+    </span>
+    </form>
+    </div>
+    <div id="nullprogress" class="reveal-modal" style="display:none"></div>
+    <img title="spacer" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7NDQ1MzMyNzU=" border="0">
+
+</body>
+
+</html>
