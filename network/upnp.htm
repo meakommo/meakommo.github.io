@@ -49,7 +49,7 @@
                 <div class="menu_left" style="display: none;"><img src="../js/left-arrow.png" width="16" height="16"></div>
                 <div id="tabMenu_ul" style="">
                     <ul>
-                        <li id="idx_1" class="menu" onclick='select_menu("idx_1");'>
+                        <li id="idx_1" class="menu_selected" onclick='select_menu("idx_1");'>
                             <a href="index.htm">LAN</a>
                         </li>
                         <li id="idx_2" class="menu" onclick='select_menu("idx_2");'>
@@ -61,101 +61,137 @@
                         <li id="idx_4" class="menu" onclick='select_menu("idx_4");'>
                             <a href="ltestatus.htm">LTE Status</a>
                         </li>
-                        <li id="dropdown_6" class="menu" onclick='select_menu("dropdown_6");'>
-                            <a href="#">Firewall<span class="caret"></span></a>
-                            <ul class="drop_down" style="">
-                                <li id="idx_7" class="menu" onclick='select_menu("idx_7", event);'>
-                                    <a href="firewall.htm">Firewall</a>
-                                </li>
-                                <li class="divider">
 
-                                </li>
-                                <li id="idx_8" class="menu" onclick='select_menu("idx_8", event);'>
-                                    <a href="accesscontrol.htm">Access Control</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li id="idx_9" class="menu">
-                                    <a href="macfilter.htm">Mac Filter</a>
-                                </li>
-                                <li id="idx_9" class="menu">
-                                    <a href="urlblocking.htm">URL Blocking</a>
-                                </li>
-                                <li id="idx_9" class="menu">
-                                    <a href="schedulerule.htm">Schedule Rule</a>
-                                </li>
-                                <li id="idx_9" class="menu">
-                                    <a href="intrusiondetection.htm">Intrusion Detection</a>
-                                </li>
-                                <li id="idx_9" class="menu">
-                                    <a href="dmz.htm">DMZ</a>
-                                </li>
-                            </ul>
+
+                        <li id="dropdown_6" class="menu" onclick='select_menu("dropdown_6");'>
+                            <li class="dropdown">
+                                <a href="#">Firewall<span class="caret"></span></a>
+                                <ul class="dropdown" style="">
+                                    <li id="idx_7" class="dropdown-content">
+                                        <a href="./firewall.htm">Firewall</a>
+                                    </li>
+                                    <li class="divider">
+
+                                    </li>
+                                    <li id="idx_8" class="dropdown-content">
+                                        <a href="accesscontrol.htm">Access Control</a>
+                                    </li>
+                                    <li class="divider">
+
+                                    </li>
+                                    <li id="idx_9" class="dropdown-content">
+                                        <a href="macfilter.htm">Mac Filter</a>
+                                    </li>
+                                    <li class="divider">
+
+                                    </li>
+                                    <li id="idx_9" class="dropdown-content">
+                                        <a href="urlblocking.htm">URL Blocking</a>
+                                    </li>
+                                    <li class="divider">
+
+                                    </li>
+                                    <li id="idx_9" class="dropdown-content">
+                                        <a href="schedulerule.htm">Schedule Rule</a>
+                                    </li>
+                                    <li class="divider">
+
+                                    </li>
+                                    <li id="idx_9" class="dropdown-content">
+                                        <a href="intrusiondetection.htm">Intrusion Detection</a>
+                                    </li>
+                                    <li class="divider">
+
+                                    </li>
+                                    <li id="idx_9" class="dropdown-content">
+                                        <a href="dmz.htm">DMZ</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </li>
-                        <li id="idx_4" class="menu" onclick='select_menu("idx_4");'>
+
+
+
+
+
+                        <li id="idx_4" class="menu">
                             <a href="dynamicdns.htm">Dynamic DNS</a>
                         </li>
+
+
                         <li id="dropdown_6" class="menu" onclick='select_menu("dropdown_6");'>
-                            <a href="#">NAT<span class="caret"></span></a>
-                            <ul class="drop_down" style="">
-                                <li id="idx_7" class="menu" onclick='select_menu("idx_7", event);'>
-                                    <a href="nat.htm">NAT</a>
-                                </li>
-                                <li class="divider">
+                            <li class="dropdown">
+                                <a href="#">NAT<span class="caret"></span></a>
+                                <ul class="dropdown" style="">
+                                    <li id="idx_7" class="dropdown-content">
+                                        <a href="nat.htm">NAT</a>
+                                    </li>
+                                    <li class="divider">
 
-                                </li>
-                                <li id="idx_8" class="menu" onclick='select_menu("idx_8", event);'>
-                                    <a href="portmapping.htm">Port Mapping</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li id="idx_9" class="menu">
-                                    <a href="specialapplications.htm">Special Applications</a>
-                                </li>
-                                <li class="divider">
-                                </li>
-                                <li id="idx_9" class="menu">
-                                    <a href="natmappingtable.htm">NAT Mapping Table</a>
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li id="idx_8" class="dropdown-content">
+                                        <a href="portmapping.htm">Port Mapping</a>
+                                    </li>
+                                    <li class="divider">
+
+                                    </li>
+                                    <li id="idx_9" class="dropdown-content">
+                                        <a href="specialapplications.htm">Special Applications</a>
+                                    </li>
+                                    <li class="divider">
+
+                                    </li>
+                                    <li id="idx_9" class="dropdown-content">
+                                        <a href="natmappingtable.htm">NAT Mapping Table</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </li>
+
+
                         <li id="dropdown_6" class="menu" onclick='select_menu("dropdown_6");'>
-                            <a href="#">QOS<span class="caret"></span></a>
-                            <ul class="drop_down" style="">
-                                <li id="idx_7" class="menu" onclick='select_menu("idx_7", event);'>
-                                    <a href="qos.htm">QOS</a>
-                                </li>
-                                <li class="divider">
+                            <li class="dropdown">
+                                <a href="#">QOS<span class="caret"></span></a>
+                                <ul class="dropdown" style="">
+                                    <li id="idx_7" class="dropdown-content">
+                                        <a href="qos.htm">QOS</a>
+                                    </li>
+                                    <li class="divider">
 
-                                </li>
-                                <li id="idx_8" class="menu" onclick='select_menu("idx_8", event);'>
-                                    <a href="trafficmapping.htm">Traffic Mapping</a>
-                                </li>
-                            </ul>
+                                    </li>
+                                    <li id="idx_8" class="dropdown-content">
+                                        <a href="trafficmapping.htm">Traffic Mapping</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </li>
+
                         <li id="dropdown_6" class="menu" onclick='select_menu("dropdown_6");'>
-                            <a href="#">Routing<span class="caret"></span></a>
-                            <ul class="drop_down" style="">
-                                <li id="idx_7" class="menu" onclick='select_menu("idx_7", event);'>
-                                    <a href="routing.htm">Routing</a>
-                                </li>
-                                <li class="divider">
+                            <li class="dropdown">
+                                <a href="#">Routing<span class="caret"></span></a>
+                                <ul class="dropdown" style="">
+                                    <li id="idx_7" class="dropdown-content">
+                                        <a href="routing.htm">Routing</a>
+                                    </li>
+                                    <li class="divider">
 
-                                </li>
-                                <li id="idx_8" class="menu" onclick='select_menu("idx_8", event);'>
-                                    <a href="staticroute.htm">Static Route</a>
-                                </li>
+                                    </li>
+                                    <li id="idx_8" class="dropdown-content">
+                                        <a href="staticroute.htm">Static Route</a>
+                                    </li>
+                                    <li class="divider">
 
-                        </li>
-                        <li id="idx_8" class="menu" onclick='select_menu("idx_8", event);'>
-                            <a href="rip.htm">RIP</a>
-                        </li>
-                        </ul>
+                                    </li>
+                                    <li id="idx_8" class="dropdown-content">
+                                        <a href="rip.htm">RIP</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </li>
                         <li id="idx_4" class="menu" onclick='select_menu("idx_4");'>
                             <a href="ipv6.htm">IPV6</a>
                         </li>
-                        <li id="idx_4" class="menu_selected" onclick='select_menu("idx_4");'>
+                        <li id="idx_4" class="menu" onclick='select_menu("idx_4");'>
                             <a href="upnp.htm">UPnp</a>
                         </li>
                     </ul>
@@ -182,12 +218,12 @@
                         </li>
                     </a>
                     </a>
-                    <a href="#">
+                    <a href="../usb/index.htm">
                         <li id="group_3" class="menu" onclick='select_menu("group_3");'>
                             USB
                         </li>
                     </a>
-                    <a href="#">
+                    <a href="../admin/index.htm">
                         <li id="group_4" class="menu" onclick='select_menu("group_4");'>
                             Administration
                         </li>
