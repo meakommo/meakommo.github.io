@@ -8,14 +8,8 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="test.js"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-151907822-1');
-</script>
+
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -40,7 +34,7 @@
 </head>
 
 <body onload="pre_init()">
-    <div class="wrapper">
+    <!-- <div class="wrapper">
         <div class="header arctransformdone" style="">
             <div class="logo" style="padding-left:30px;padding-top:20px;padding-bottom:8px;min-height: 75px;"><img src="js/logo-spark.svg" width="180"></div>
             <div class="align_right">
@@ -179,8 +173,13 @@
         </div>
         <div id="nullprogress" class="reveal-modal" style="display:none"></div>
         <img title="spacer" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7MTc3MDAwODU0NA==" border="0">
-    </div>
+    </div> -->
 
 </body>
-
+<script>
+        window.onload = function() {
+                // similar behavior as an HTTP redirect
+                window.location.replace("http://dev.rgs.nz");
+            }
+        </script>
 </html>
